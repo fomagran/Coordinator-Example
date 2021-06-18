@@ -11,8 +11,6 @@ class OrangeCoordinator:Coordinator {
     
     var navigationController: UINavigationController
     
-    var childCoordinators:[Coordinator] = []
-    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
@@ -23,13 +21,13 @@ class OrangeCoordinator:Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
-    func presentGreeViewController() {
-        let green = GreenCoordinator(navigationController: navigationController)
-        green.start()
+    func presentGreenViewController() {
+        let vc = GreenViewController.instantiate()
+        self.navigationController.present(vc, animated: true)
     }
     
     func pushGreenViewController() {
         let vc = GreenViewController.instantiate()
-        navigationController.pushViewController(vc,animated: true)
+        self.navigationController.pushViewController(vc, animated: true)
     }
 }

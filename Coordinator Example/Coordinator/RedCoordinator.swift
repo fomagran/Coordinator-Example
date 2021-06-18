@@ -8,10 +8,8 @@
 import UIKit
 
 class RedCoordinator:Coordinator {
-    
+
     var navigationController: UINavigationController
-    
-    var childCoordinators:[Coordinator] = []
     
     init(navigationController: UINavigationController) {
           self.navigationController = navigationController
@@ -19,22 +17,23 @@ class RedCoordinator:Coordinator {
 
       func start() {
           let vc = RedViewController.instantiate()
-            vc.coordinator = self
+            vc.delegate = self
           navigationController.pushViewController(vc, animated: false)
       }
-    
+}
+
+extension RedCoordinator:RedViewControllerDelegate {
     func goToOrangeViewController() {
-        let orangeCoordinator = OrangeCoordinator(navigationController: navigationController)
-        orangeCoordinator.start()
+        let coordinator = OrangeCoordinator(navigationController: navigationController)
+        coordinator.start()
     }
     
     func goToYellowViewController() {
-        let vc = YellowViewController.instantiate()
-        navigationController.pushViewController(vc, animated: true)
+  
     }
     
     func goToGreenViewController() {
-        let vc = GreenViewController.instantiate()
-        navigationController.pushViewController(vc, animated: true)
+        let coordinator = GreenCoordinator(navigationController: navigationController)
+        coordinator.start()
     }
 }

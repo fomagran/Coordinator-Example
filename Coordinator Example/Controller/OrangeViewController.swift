@@ -9,13 +9,13 @@ import UIKit
 
 class OrangeViewController: UIViewController ,Storyboarded{
     
-    weak var coordinator: OrangeCoordinator?
+    var coordinator: OrangeCoordinator?
     
     var navTitle:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = navTitle
+
     }
 
     @IBAction func pushGreen(_ sender: Any) {
@@ -23,7 +23,6 @@ class OrangeViewController: UIViewController ,Storyboarded{
     }
     
     @IBAction func presentGreen(_ sender: Any) {
-        print("??")
-        coordinator?.presentGreeViewController()
+        coordinator?.presentGreenViewController()
     }
 }
