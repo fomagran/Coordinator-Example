@@ -24,9 +24,8 @@ class RedCoordinator:Coordinator {
       }
     
     func goToOrangeViewController() {
-        let vc = OrangeViewController.instantiate()
-        vc.navTitle = "Orange"
-        navigationController.pushViewController(vc, animated: true)
+        let orangeCoordinator = OrangeCoordinator(navigationController: navigationController)
+        orangeCoordinator.start()
     }
     
     func goToYellowViewController() {

@@ -119,6 +119,9 @@
                                         <state key="normal" title="Present Geen">
                                             <color key="titleColor" systemColor="systemGreenColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="presentGreen:" destination="hTE-Vk-FRx" eventType="touchUpInside" id="fCD-Lp-JrA"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA0-Bg-7yY">
                                         <rect key="frame" x="0.0" y="78" width="300" height="48"/>
@@ -126,6 +129,9 @@
                                         <state key="normal" title="Go Green">
                                             <color key="titleColor" systemColor="systemGreenColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="pushGreen:" destination="hTE-Vk-FRx" eventType="touchUpInside" id="EGe-GI-ibV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

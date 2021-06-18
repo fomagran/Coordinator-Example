@@ -9,6 +9,8 @@ import UIKit
 
 class GreenViewController: UIViewController,Storyboarded {
 
+    weak var coordinator:GreenCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

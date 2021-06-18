@@ -19,6 +19,7 @@
 		045AF9F1267C941A00725039 /* RedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AF9F0267C941A00725039 /* RedCoordinator.swift */; };
 		045AF9F5267C977400725039 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AF9F4267C977400725039 /* Storyboarded.swift */; };
 		045AF9FB267CA7BC00725039 /* OrangeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AF9FA267CA7BC00725039 /* OrangeCoordinator.swift */; };
+		045AF9FF267CAB3F00725039 /* GreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AF9FE267CAB3F00725039 /* GreenCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		045AF9F0267C941A00725039 /* RedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCoordinator.swift; sourceTree = "<group>"; };
 		045AF9F4267C977400725039 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		045AF9FA267CA7BC00725039 /* OrangeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeCoordinator.swift; sourceTree = "<group>"; };
+		045AF9FE267CAB3F00725039 /* GreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				045AF9F0267C941A00725039 /* RedCoordinator.swift */,
 				045AF9FA267CA7BC00725039 /* OrangeCoordinator.swift */,
+				045AF9FE267CAB3F00725039 /* GreenCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				045AF9F5267C977400725039 /* Storyboarded.swift in Sources */,
 				045AF9EA267C921E00725039 /* GreenViewController.swift in Sources */,
 				045AF9F1267C941A00725039 /* RedCoordinator.swift in Sources */,
+				045AF9FF267CAB3F00725039 /* GreenCoordinator.swift in Sources */,
 				045AF9EE267C936C00725039 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
